@@ -1,0 +1,117 @@
+Updated - Important Pointers for Exams
+Important Note:
+
+Terraform Exams are updated regularly. Whenever there is a new update released in exams, there are certain topics that you will notice that are not part of the course. It takes some amount of time to record the delta videos. In the mean-time, we have created a document that has all of these deltas topics.
+
+1. Requirements for publishing module in Terraform Registry
+
+Ensure that you know the list of requirements for publishing modules in the Terraform registry.
+
+https://www.terraform.io/docs/registry/modules/publish.html
+
+2. List:
+
+list(...): a sequence of values identified by consecutive whole numbers starting with zero. The keyword list is a shorthand for list(any), which accepts any element type as long as every element is the same type
+
+
+
+
+
+We cannot use all words within variable names. Terraform reserves some additional names that can no longer be used as input variable names for modules. These reserved names are:
+
+count
+depends_on
+for_each
+lifecycle
+providers
+source
+3. Air Gapped
+
+If terraform needs to be installed in an environment without internet access, the installation is referred to as air-gapped
+
+https://www.terraform.io/docs/enterprise/install/installer.html.
+
+4. Index Function
+
+index finds the element index for a given value in a list.
+
+https://www.terraform.io/docs/configuration/functions/index.html
+
+5. Terraform Enterprise
+
+Before mid-2019, all distributions of Terraform Cloud used to be called Terraform Enterprise; the self-hosted distribution was called Private Terraform Enterprise (PTFE).
+
+Terraform Enterprise supports the following data storage:
+
+PostgresSQL
+
+Any S3-compatible object storage service, GCP Cloud Storage or Azure blob storage meets Terraform Enterprise's object storage requirements.
+
+If you already run your own Vault cluster in production, you can configure Terraform Enterprise to use that instead of running its own internal Vault instance.
+
+https://www.terraform.io/docs/enterprise/before-installing/index.html
+
+6. VCS Provider Support for Terraform Provider
+
+GitHub.com
+
+GitHub.com (OAuth)
+
+GitHub Enterprise
+
+GitLab.com
+
+GitLab EE and CE
+
+Bitbucket Cloud
+
+Bitbucket Server
+
+Azure DevOps Server
+
+Azure DevOps Services
+
+https://www.terraform.io/docs/cloud/vcs/index.html
+
+7. Zipmap function
+
+https://www.terraform.io/docs/configuration/functions/zipmap.html
+
+8 Supported Format for Comments
+
+The Terraform language supports three different syntaxes for comments:
+
+#
+//
+/* and */
+https://www.terraform.io/docs/configuration/syntax.html
+
+Miscellaneous Pointer
+
+GitHub is not the supported backend type in Terraform.
+
+https://www.terraform.io/docs/backends/types/index.html
+
+When running terraform init, the plugins are downloaded in the sub-directory of the present working directory at the path of .terraform/plugins
+
+API and CLI access for Terraform Cloud can be managed through API tokens that can be generated from Terraform Cloud UI.
+
+Terraform uses Parallelism to reduce the time it takes to create the resource. By default, this value is set to 10
+
+Terraform recommends using an Indent two spaces for each nesting level.
+
+ami           = "abc123"
+instance_type = "t2.micro"
+,
+
+Following are the two CLI configuration file for Terraform:
+
+.terraformrc
+
+terraform.rc
+
+https://www.terraform.io/docs/commands/cli-config.html
+
+The terraform get command is used to download and update modules mentioned in the root module.
+
+The Sentinel command-line interface (CLI) allows for the developing and testing of policies outside of a particular Sentinel implementation

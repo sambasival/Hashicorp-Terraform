@@ -23,3 +23,6 @@ https://docs.google.com/document/d/1fNKP1b6Uv1hav03idiaTgbuxHgJ9ujzOh2ALoMBVovE/
 
 Notes Section
 https://docs.google.com/document/d/1N_8M8wpCgiZ0D2CXgYuypKBAvtkwduQJ4gdtpVyD1as/edit?usp=sharing
+
+Notes - Important Pointers for Exams
+https://docs.google.com/document/d/1bgeX2W_f2BQ1uGlNZR5yIk9KUxnPK-VUQs_Hax3mPi0/edit?usp=sharing
